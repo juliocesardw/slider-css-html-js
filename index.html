@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider usando html, css y javascript</title>
+
+
+    <!-- cdn fuente de iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- esilos slick js pagina: https://kenwheeler.github.io/slick/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <!-- nuestros estilos -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+    
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+
+                <nav class="nav-mobile lg-hide">
+                    <div class="nav-mobile__icon-bars">
+                        <button type="button" class="fa-solid fa-bars jsBtnBars"></button>
+                    </div>
+                    <div class="nav-mobile__list">
+                        <ul>
+                            <li><a href="#">Colección</a></li>
+                            <li><a href="#">Ofertas</a></li>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Politicas</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+
+                        <button class="nav-mobile__menu-close fa-solid fa-xmark jsCloseMenu"></button>
+                    </div>
+                    
+                </nav>
+
+                <nav class="header__nav small-hide">
+                    <ul>
+                        <li><a href="#">Colección</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__logo">
+                    <a href="/">
+                        <img src="img/Logotipo-fashioza.svg" alt="Logotipo">
+                    </a>
+                </div>
+
+                <nav class="header__icons">
+                    <ul>
+                        <li class="small-hide">
+                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </li>
+
+                        <li class="small-hide">
+                            <a href="#"><i class="fa-solid fa-user"></i></a>
+                        </li>
+
+                        <li class="header__icons-cart">
+                            <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                            <span class="icons-cart-count">10</span>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- bloque slide -->
+    <section class="slide">
+        <div class="container">
+            <div class="slide__row">
+                <div class="slide__col">
+                    <div class="text-content">
+                        <p class="text-content__small">LO MAS NUEVO</p>
+                        <h2 class="text-content__sub-title">
+                            <em>Estilo y tendencia en un solo lugar:</em> ¡Explora nuestra tienda online y encuentra tu look ideal!
+                        </h2>
+    
+                        <a href="#" class="btn btn-defult">Comprar ahora</a>
+                    </div>
+                </div>
+                <div class="slide__col">
+                    <div class="product-carousel">
+                        <div class="product-card">
+                            <div class="product-card__img">
+                               <a href="#link">
+                                <img src="img/1-activo.jpg" alt="" class="img-desktop">
+                                <img src="img/1-hover.jpg" alt="" class="img-mobile">
+                                <div class="product-card__offert">Oferta</div>
+                                <a href="#" class="product-btn btn btn-defult btn-hide">Ver detalles</a>
+                               </a>
+                            </div>
+                            <div class="product-card__info">
+                                <h3 class="product-card__name">Sed molestie urna libero</h3>
+                                <div class="product-card__price"><p class="through">$100.00</p><p class="bold">$90.00</p></div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-card__img">
+                               <a href="#link">
+                                <img src="img/2-activo.jpg" alt="" class="img-desktop">
+                                <img src="img/2-hover.jpg" alt="" class="img-mobile">
+                                <a href="#" class="product-btn btn btn-defult btn-hide">Ver detalles</a>
+                               </a>
+                            </div>
+                            <div class="product-card__info">
+                                <h3 class="product-card__name">Sed molestie urna libero</h3>
+                                <div class="product-card__price"><p>$200.00</p></div>
+                            </div>
+                        </div>
+
+
+                        <div class="product-card">
+                            <div class="product-card__img">
+                               <a href="#link">
+                                <img src="img/3-activo.jpg" alt="" class="img-desktop">
+                                <img src="img/3-activo.jpg" alt="" class="img-mobile">
+                                <div class="product-card__offert">Oferta</div>
+                                <a href="#" class="product-btn btn btn-defult btn-hide">Ver detalles</a>
+                               </a>
+                            </div>
+                            <div class="product-card__info">
+                                <h3 class="product-card__name">Sed molestie urna libero</h3>
+                                <div class="product-card__price"><p class="through">$160.00</p><p class="bold">$110.00</p></div>
+                            </div>
+                        </div>
+
+
+                        <div class="product-card">
+                            <div class="product-card__img">
+                               <a href="#link">
+                                <img src="img/4-activo.jpg" alt="" class="img-desktop">
+                                <img src="img/4-activo.jpg" alt="" class="img-mobile">
+                                <a href="#" class="product-btn btn btn-defult btn-hide">Ver detalles</a>
+                               </a>
+                            </div>
+                            <div class="product-card__info">
+                                <h3 class="product-card__name">Sed molestie urna libero</h3>
+                                <div class="product-card__price"><p>$260.00</p></div>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <div class="product-card__img">
+                               <a href="#link">
+                                <img src="img/1-activo.jpg" alt="" class="img-desktop">
+                                <img src="img/1-hover.jpg" alt="" class="img-mobile">
+                                <div class="product-card__offert">Oferta</div>
+                                <a href="#" class="product-btn btn btn-defult btn-hide">Ver detalles</a>
+                               </a>
+                            </div>
+                            <div class="product-card__info">
+                                <h3 class="product-card__name">Sed molestie urna libero</h3>
+                                <div class="product-card__price"><p class="through">$100.00</p><p class="bold">$90.00</p></div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-card__img">
+                               <a href="#link">
+                                <img src="img/2-activo.jpg" alt="" class="img-desktop">
+                                <img src="img/2-hover.jpg" alt="" class="img-mobile">
+                                <a href="#" class="product-btn btn btn-defult btn-hide">Ver detalles</a>
+                               </a>
+                            </div>
+                            <div class="product-card__info">
+                                <h3 class="product-card__name">Sed molestie urna libero</h3>
+                                <div class="product-card__price"><p>$200.00</p></div>
+                            </div>
+                        </div>
+
+
+                        <div class="product-card">
+                            <div class="product-card__img">
+                               <a href="#link">
+                                <img src="img/3-activo.jpg" alt="" class="img-desktop">
+                                <img src="img/3-activo.jpg" alt="" class="img-mobile">
+                                <div class="product-card__offert">Oferta</div>
+                                <a href="#" class="product-btn btn btn-defult btn-hide">Ver detalles</a>
+                               </a>
+                            </div>
+                            <div class="product-card__info">
+                                <h3 class="product-card__name">Sed molestie urna libero</h3>
+                                <div class="product-card__price"><p class="through">$160.00</p><p class="bold">$110.00</p></div>
+                            </div>
+                        </div>
+
+
+                        <div class="product-card">
+                            <div class="product-card__img">
+                               <a href="#link">
+                                <img src="img/4-activo.jpg" alt="" class="img-desktop">
+                                <img src="img/4-activo.jpg" alt="" class="img-mobile">
+                                <a href="#" class="product-btn btn btn-defult btn-hide">Ver detalles</a>
+                               </a>
+                            </div>
+                            <div class="product-card__info">
+                                <h3 class="product-card__name">Sed molestie urna libero</h3>
+                                <div class="product-card__price"><p>$260.00</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end bloque slide -->
+
+
+    <!-- script jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- script slich js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- nuestro script -->
+    <script src="js/app.js"></script>
+
+</body>
+</html>
